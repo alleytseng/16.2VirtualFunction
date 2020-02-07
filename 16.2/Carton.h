@@ -15,7 +15,7 @@ class Carton: public Box
 {
 public:
     Carton(double lv,double bv, double hv, char* pString = "Cardboard");
-    //double volume();
+    double volume();
     
 protected:
     char *pMertirial;

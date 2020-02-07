@@ -11,3 +11,9 @@ Carton::Carton(double lv,double bv, double hv, char* pString):Box(lv,bv,hv)//沒
 {
     pMertirial=pString;
 }
+
+double Carton::volume()
+{
+    double vol = (length-0.5)*(breadth-0.5)*(hieght-0.5);
+    return vol>0.0?vol:0.0;
+}

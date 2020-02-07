@@ -15,7 +15,7 @@ class Box
 public:
     Box(double lv=1.0, double bv=1.0, double hv=1.0);
     ~Box();
-    double volume();
+    virtual double volume();
     void showVolume();
 protected:
     double length;
